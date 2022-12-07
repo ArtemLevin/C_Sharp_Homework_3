@@ -18,5 +18,5 @@ if (orin == rev)
 }
 else
 {
-    Console.WriteLine("Не явялется палиндромом");
+    Console.WriteLine("не явялется палиндромом");
 }
