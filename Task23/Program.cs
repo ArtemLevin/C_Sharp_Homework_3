@@ -9,11 +9,12 @@ int N = int.Parse(Console.ReadLine()!);
 
 Console.Write($"{N} -> ");
 
-int counter = 1, cube;
+int counter = 1; 
+double cube;
 
 while (counter < (N + 1))
 {
-    cube = counter * counter * counter;
+    cube = Math.Pow (counter, 3);
     if (counter == N)
     {
         Console.Write($"{cube}"); // исключаем запятую после последнего куба
