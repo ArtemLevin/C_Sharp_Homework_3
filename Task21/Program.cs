@@ -7,24 +7,24 @@
 
 Console.WriteLine("Вводим координаты точки А");
 Console.Write("Введите координату икс: ");
-int xA =  int.Parse(Console.ReadLine()!); 
+int xA = int.Parse(Console.ReadLine()!);
 Console.Write("Введите координату игрек: ");
-int yA =  int.Parse(Console.ReadLine()!); 
+int yA = int.Parse(Console.ReadLine()!);
 Console.Write("Введите координату зет: ");
-int zA =  int.Parse(Console.ReadLine()!); 
+int zA = int.Parse(Console.ReadLine()!);
 Console.WriteLine($"Координаты точки А({xA},{yA},{zA})");
 
 Console.WriteLine("Вводим координаты точки В");
 Console.Write("Введите координату икс: ");
-int xB =  int.Parse(Console.ReadLine()!); 
+int xB = int.Parse(Console.ReadLine()!);
 Console.Write("Введите координату игрек: ");
-int yB =  int.Parse(Console.ReadLine()!); 
+int yB = int.Parse(Console.ReadLine()!);
 Console.Write("Введите координату зет: ");
-int zB =  int.Parse(Console.ReadLine()!); 
+int zB = int.Parse(Console.ReadLine()!);
 Console.WriteLine($"Координаты точки В({xB},{yB},{zB})");
 
-double distance = Math.Sqrt((xB-xA)*(xB-xA)+(yB-yA)*(yB-yA)+(zB-zA)*(zB-zA));
+double distance = Math.Round(Math.Sqrt(Math.Pow((xB - xA), 2) + Math.Pow((yB - yA), 2) + Math.Pow((yB - yA), 2)), 2);
 
-Console.Write("Расстояние меджу точками " + distance );
+Console.Write("Расстояние меджу точками " + distance);
 
 
